@@ -1,176 +1,221 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
   
     <head>
         <title>Festivales filtrados</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
         <style>
-            body {
+            @media (min-width: 75em)  {
+                body {
                     font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
                 }
-                
-                .container-row {
-                    display: flex;
-                    flex-direction: row;
-                }
 
-                .container-col {
+                .contenedor {
                     display: flex;
                     flex-direction: column;
-                }        
-
-                .box-row {
-                    flex-direction: row;
-                }
-                
-                .flex-column{
-                    flex-direction: column;
-                }
-
-                .justify-center {
-                    justify-content: center;
-                }
-
-                .justify-left {
-                    justify-content: flex-start;
-                }
-
-                .justify-right {
-                    justify-content: flex-end;
-                }
-                
-                .justify-between {
-                    justify-content: space-between
-                }
-
-                .align-center {
                     align-items: center;
                 }
-
-                .align-left {
-                    align-items: flex-start;
-                }
-
-                .align-right {
-                    align-items: flex-end;
-                }
                 
-                .align-baseline{
-                    align-items: baseline;
-                }
-
-                .width-100 {
-                    width: 100%;
-                }
-
-                .width-75 {
+                .tamaño-contenedor {
                     width: 75%;
                 }
-
-                .width-50 {
-                    width: 50%;
-                }
-
-                .width-25 {
-                    width: 25%;
-                }
-
-                .padding-10 {
+                
+                .etiquetas {
+                    display: flex;
+                    flex-direction: row;
                     padding: 10px;
                 }
-
-                .padding-5 {
+                
+                form {
+                    padding: 10px;
+                }
+                
+                .festival123 {
+                    display: flex;
+                    flex-direction: row;
                     padding: 5px;
                 }
-       
-                .text-center {
-                    text-align: center;
-                }
                 
-                .color-button {
-                    color: #ACE8E6;
-                }
-                
-                .image {
+                img {
                     width: 75%;
                     height: 75%;
                 }
                 
-                .cartel{
-                  
-                  width: 329px;
-                  height: 421px;
-                  display:flex;
-                  justify-content: center;
-                  align-items: center;
-                  background: #C2F6F3;
+                .datos {
+                    display: flex;
+                    flex-direction: column;
+                    width: 75%;
                 }
-                .background-blue {
+                
+                .cartel{
+                    width: 90%;
+                    height: 421px;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
                     background-color: #C2F6F3;
                 }
+            }
+            @media (min-width: 0em ) and (max-width: 50em)   {
+                body {
+                    font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+                }
+
+                .contenedor {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                
+                .tamaño-contenedor {
+                    width: 75%;
+                }
+                
+                .etiquetas {
+                    display: flex;
+                    flex-direction: row;
+                    padding: 10px;
+                }
+                
+                form {
+                    padding: 10px;
+                }
+                
+                .festival123 {
+                    display: flex;
+                    flex-direction: row;
+                    padding: 5px;
+                }
+                
+                img {
+                    width: 75%;
+                    height: 75%;
+                }
+                
+                .datos {
+                    display: flex;
+                    flex-direction: column;
+                    width: 75%;
+                }
+                
+                .cartel{
+                    width: 90%;
+                    height: 421px;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #C2F6F3;
+                }
+            }
+            @media (min-width: 48em) and (max-width:75em)  {
+                body {
+                    font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+                }
+
+                .contenedor {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                
+                .tamaño-contenedor {
+                    width: 75%;
+                }
+                
+                .etiquetas {
+                    display: flex;
+                    flex-direction: row;
+                    padding: 10px;
+                }
+                
+                form {
+                    padding: 10px;
+                }
+                
+                .festival123 {
+                    display: flex;
+                    flex-direction: row;
+                    padding: 5px;
+                }
+                
+                img {
+                    width: 75%;
+                    height: 75%;
+                    
+                }
+                
+                .datos {
+                    display: flex;
+                    flex-direction: column;
+                    width: 75%;
+                }
+                
+                .cartel{
+                    width: 90%;
+                    height: 421px;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #C2F6F3;
+                }
+            }
         </style>
     </head>
     
     <body>
-        <div class="container-col align-center">
-            <div class="width-75">
-                <div class="container-row padding-10">
-                    <form class="padding-10" action = "Festivales filtrados.html" method = "GET"> 
+        <div class="contenedor">
+            <div class="tamaño-contendor">
+                <div class="etiquetas">
+                    <form action = "Festivales filtrados.html" method = "GET"> 
                         <input type="submit" value="Etiqueta 1" />
                     </form>
-                    <form class="padding-10" action = "Festivales filtrados.html" method = "GET"> 
+                    <form action = "Festivales filtrados.html" method = "GET"> 
                         <input type="submit" value="Etiqueta 2" />
                     </form>   
-                    <form class="padding-10" action = "Festivales filtrados.html" method = "GET"> 
+                    <form action = "Festivales filtrados.html" method = "GET"> 
                         <input type="submit" value="Etiqueta 3" />
                     </form>
                 </div>
-                <div class="container-row padding-5">
-                    <div class="container-col width-75">
+                <div class="festival123">
+                    <div class="datos">
                         <div class="cartel"> 
-                          <center><img class="image" src="imagenes/logo_imagen.png" /> </center>
+                            <img src="imagenes/logo_imagen.png" />
                         </div> 
                         <p>Festival 1 <br> Ubicación: xxxx <br> Horario: xx:xx <br> xxxxxxxxxxxxxx <br> xxxxxxxxxxxxxx </p>
                     </div>
-                    <div class="container-col width-75">
-                      <div class="cartel"> 
-                        <center><img class="image" src="imagenes/logo_imagen.png" /> </center>
-                      </div>
+                    <div class="datos">
+                        <div class="cartel"> 
+                            <img src="imagenes/logo_imagen.png" />
+                        </div>
                         <p>Festival 2 <br> Ubicación: xxxx <br> Horario: xx:xx <br> xxxxxxxxxxxxxx <br> xxxxxxxxxxxxxx </p>
                     </div>
-                    <div class="container-col width-75">
-                      <div class="cartel"> 
-                        <center><img class="image" src="imagenes/logo_imagen.png" /> </center>
-                      </div>
+                    <div class="datos">
+                        <div class="cartel"> 
+                            <img src="imagenes/logo_imagen.png" />
+                        </div>
                         <p>Festival 3 <br> Ubicación: xxxx <br> Horario: xx:xx <br> xxxxxxxxxxxxxx <br> xxxxxxxxxxxxxx </p>
                     </div>
                 </div>
-                <div class="container-row justify-between padding-5">
-                        <div class="container-col width-75">
-                          <div class="cartel"> 
-                            <center><img class="image" src="imagenes/logo_imagen.png" /> </center>
-                          </div>
-                            <p>Festival 4 <br> Ubicación: xxxx <br> Horario: xx:xx <br> xxxxxxxxxxxxxx <br> xxxxxxxxxxxxxx </p>
+                <div class="festival123">
+                    <div class="datos">
+                        <div class="cartel"> 
+                            <img src="imagenes/logo_imagen.png" />
                         </div>
-                        <div class="container-col width-75">
-                          <div class="cartel"> 
-                            <center><img class="image" src="imagenes/logo_imagen.png" /> </center>
-                          </div>
-                            <p>Festival 5 <br> Ubicación: xxxx <br> Horario: xx:xx <br> xxxxxxxxxxxxxx <br> xxxxxxxxxxxxxx </p>
+                        <p>Festival 4 <br> Ubicación: xxxx <br> Horario: xx:xx <br> xxxxxxxxxxxxxx <br> xxxxxxxxxxxxxx </p>
+                    </div>
+                    <div class="datos">
+                        <div class="cartel"> 
+                            <img src="imagenes/logo_imagen.png" />
                         </div>
-                        <div class="container-col width-75">
-                          <div class="cartel"> 
-                            <center><img class="image" src="imagenes/logo_imagen.png" /> </center>
-                          </div>
-                            <p>Festival 6 <br> Ubicación: xxxx <br> Horario: xx:xx <br> xxxxxxxxxxxxxx <br> xxxxxxxxxxxxxx </p>
+                        <p>Festival 5 <br> Ubicación: xxxx <br> Horario: xx:xx <br> xxxxxxxxxxxxxx <br> xxxxxxxxxxxxxx </p>
+                    </div>
+                    <div class="datos">
+                        <div class="cartel"> 
+                            <img src="imagenes/logo_imagen.png" />
                         </div>
+                        <p>Festival 6 <br> Ubicación: xxxx <br> Horario: xx:xx <br> xxxxxxxxxxxxxx <br> xxxxxxxxxxxxxx </p>
+                    </div>
                 </div>
             </div>
         </div>

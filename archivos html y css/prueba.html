@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Main Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+        <style>
+            @media (min-width: 75em)  {
+                #contenido { width: 800px; margin: 0 auto; }
+
+                .grid-container {
+                    display: grid;
+                    grid-template-rows: 100px 100px 100px  100px 100px 100px;
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                    grid-gap: 20px;
+                    grid-template-areas:
+                    "area1 area1 area1 area1 area1"
+                    "area1 area1 area1 area1 area1"
+                    "area1 area1 area1 area1 area1"
+                    "area2 area2 area2 area2 area2"
+                    "area2 area2 area2 area2 area2";
+                  }
+
+                .grid-container-festivales-cercanos{
+                    grid-area: area2;
+                    display: grid;
+                    grid-template-rows: 150px;
+                    grid-template-columns:  150px 150px 150px 150px 150px 150px;
+                    grid-gap: 20px;
+                    grid-template-areas:
+                    "area2 area3 area4 area5 area6 area7";
+                    height: 180px; 
+                    overflow-x: auto;
+                }
+                .grid-item1 {
+                  background: #ACE8E6;
+                  text-align: center;
+                  grid-area: area1;
+                }
+
+                .grid-item2 {
+                  background: #7CFFC5;
+                  text-align: center;
+                  width: 150px;
+                  height: 150px;
+                  grid-area: area2;
+                }
+
+                .grid-item3 {
+                    background: #7CFFC5;
+                    text-align: center;
+                    width: 150px;
+                    height: 150px;
+                    grid-area: area3;
+                }
+                .grid-item4 {
+                    background: #7CFFC5;
+                    width: 150px;
+                    height: 150px;
+                    text-align: center;
+                    grid-area: area4;
+                }
+                .grid-item5 {
+                    background: #7CFFC5;
+                    width: 150px;
+                    height: 150px;
+                    text-align: center;
+                    grid-area: area5;
+                }
+                .grid-item6 {
+                    background: #7CFFC5;
+                    width: 150px;
+                    height: 150px;
+                    text-align: center;
+                    grid-area: area6;
+                }
+
+                .grid-item7 {
+                    background: #7CFFC5;
+                    width: 150px;
+                    height: 150px;
+                    text-align: center;
+                    grid-area: area7;
+                }
+                
+                .slider {
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    grid-area: area1;
+                }
+                
+                .slider ul{
+                    display: flex;
+                    width: 300%;
+                    padding: 0px;
+                    animation: cambio 15s infinite linear;
+                }
+                
+                .slider li{
+                    width: 100%;
+                    list-style: none;
+                }
+                
+                .slider img{
+                    width: 100%;
+                }
+                
+                @keyframes cambio {
+                    0% {margin-left: 0px;} 
+                    30% {margin-left: 0px;}  
+                    35%  {margin-left: -100%}
+                    65%  {margin-left: -100%}
+                    70%  {margin-left: -200%}
+                    100%  {margin-left: -200%;}
+                }
+            }
+            @media (min-width: 0em ) and (max-width: 50em)  {
+                #contenido { width: 800px; margin: 0 auto; }
+
+                .grid-container {
+                    display: grid;
+                    grid-template-rows: 100px 100px 100px  100px 100px 100px;
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                    grid-gap: 20px;
+                    grid-template-areas:
+                    "area1 area1 area1 area1 area1"
+                    "area1 area1 area1 area1 area1"
+                    "area1 area1 area1 area1 area1"
+                    "area2 area2 area2 area2 area2"
+                    "area2 area2 area2 area2 area2";
+                  }
+
+                .grid-container-festivales-cercanos{
+                    grid-area: area2;
+                    display: grid;
+                    grid-template-rows: 150px;
+                    grid-template-columns:  150px 150px 150px 150px 150px;
+                    grid-gap: 20px;
+                    grid-template-areas:
+                    "area2 area3 area4 area5 area6 area7";
+                    height: 180px; 
+                    overflow-x: auto;
+                }
+                .grid-item1 {
+                  background: #ACE8E6;
+                  text-align: center;
+                  grid-area: area1;
+                }
+
+                .grid-item2 {
+                  background: #7CFFC5;
+                  text-align: center;
+                  width: 150px;
+                  height: 150px;
+                  grid-area: area2;
+                }
+
+                .grid-item3 {
+                    background: #7CFFC5;
+                    text-align: center;
+                    width: 150px;
+                    height: 150px;
+                    grid-area: area3;
+                }
+                .grid-item4 {
+                    background: #7CFFC5;
+                    width: 150px;
+                    height: 150px;
+                    text-align: center;
+                    grid-area: area4;
+                }
+                .grid-item5 {
+                    background: #7CFFC5;
+                    width: 150px;
+                    height: 150px;
+                    text-align: center;
+                    grid-area: area5;
+                }
+                .grid-item6 {
+                    background: #7CFFC5;
+                    width: 150px;
+                    height: 150px;
+                    text-align: center;
+                    grid-area: area6;
+                }
+
+                .grid-item7 {
+                    background: #7CFFC5;
+                    width: 150px;
+                    height: 150px;
+                    text-align: center;
+                    grid-area: area7;
+                }
+            }
+            @media (min-width: 48em) and (max-width:75em)  {
+                #contenido { width: 800px; margin: 0 auto; }
+
+                .grid-container {
+                    display: grid;
+                    grid-template-rows: 100px 100px 100px  100px 100px 100px;
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                    grid-gap: 20px;
+                    grid-template-areas:
+                    "area1 area1 area1 area1 area1"
+                    "area1 area1 area1 area1 area1"
+                    "area1 area1 area1 area1 area1"
+                    "area2 area2 area2 area2 area2"
+                    "area2 area2 area2 area2 area2";
+                  }
+
+                .grid-container-festivales-cercanos{
+                    grid-area: area2;
+                    display: grid;
+                    grid-template-rows: 150px;
+                    grid-template-columns:  150px 150px 150px 150px 150px;
+                    grid-gap: 20px;
+                    grid-template-areas:
+                    "area2 area3 area4 area5 area6 area7";
+                    height: 180px; 
+                    overflow-x: auto;
+                }
+                .grid-item1 {
+                  background: #ACE8E6;
+                  text-align: center;
+                  grid-area: area1;
+                }
+
+                .grid-item2 {
+                  background: #7CFFC5;
+                  text-align: center;
+                  width: 150px;
+                  height: 150px;
+                  grid-area: area2;
+                }
+
+                .grid-item3 {
+                    background: #7CFFC5;
+                    text-align: center;
+                    width: 150px;
+                    height: 150px;
+                    grid-area: area3;
+                }
+                .grid-item4 {
+                    background: #7CFFC5;
+                    width: 150px;
+                    height: 150px;
+                    text-align: center;
+                    grid-area: area4;
+                }
+                .grid-item5 {
+                    background: #7CFFC5;
+                    width: 150px;
+                    height: 150px;
+                    text-align: center;
+                    grid-area: area5;
+                }
+                .grid-item6 {
+                    background: #7CFFC5;
+                    width: 150px;
+                    height: 150px;
+                    text-align: center;
+                    grid-area: area6;
+                }
+
+                .grid-item7 {
+                    background: #7CFFC5;
+                    width: 150px;
+                    height: 150px;
+                    text-align: center;
+                    grid-area: area7;
+                }
+            }
+        </style>
+    </head> 
+
+    <body>
+        <div id="contenido">
+            <div class="grid-container"> 
+                <div class="slider">
+                    <ul>
+                        <li><img src="imagenes/festival1.jpg"/></li>
+                        <li><img src="imagenes/festival2.jpg"/></li>
+                        <li><img src="imagenes/festival3.jpg"/></li>
+                    </ul>
+                </div>
+                <!-- <div class="grid-item1"></div> -->
+                <div class="grid-container-festivales-cercanos">
+                    <a href="Festival.html">
+                        <div class="grid-item2" > </div>
+                    </a>
+                    <a href="Festival.html">
+                        <div class="grid-item3" > </div>
+                    </a>
+                    <a href="Festival.html">
+                        <div class="grid-item4" > </div>
+                    </a>
+                    <a href="Festival.html">
+                        <div class="grid-item5" > </div>
+                    </a>
+                    <a href="Festival.html">
+                        <div class="grid-item6" > </div>
+                    </a>
+                    <a href="Festival.html">
+                        <div class="grid-item7" > </div>
+                    </a>
+                </div>
+            </div>  
+        </div> 
+    </body>
+</html>
