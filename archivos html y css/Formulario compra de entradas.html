@@ -4,265 +4,376 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
-<head>
-    <title>Compra de entradas</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        @media screen and (min-width: 451px) {
-            body {
-                font-family: Arial, Helvetica, sans-serif;
-                background-image: url('imagenes/ticket2.jpg');
-                background-size: cover;
-                -webkit-text-stroke: 0.15px white;
-                color: black;
+<html>  
+    <head>
+        <title>Compra de entradas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @media (min-width: 75em) {
+                body {
+                    font-family: Arial, Helvetica, sans-serif;
+                    background-image: url('imagenes/ticket2.jpg');
+                    background-size: cover;
+                    color: white;
+                }
+
+                h1 {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                }
+
+                form {
+                    padding: 10px;
+                }
+
+                .contenedor {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .tamaño-contenedor {
+                    width: 75%;
+                }
+
+                .contenedor1 {
+                    display: flex;
+                    flex-direction: row;
+                    width: auto;
+                }
+
+                .nombre {
+                    display: flex;
+                    flex-direction: column;
+                    width: 33%;
+                    padding: 10px;
+                }
+
+                .apellidos {
+                    display: flex;
+                    flex-direction: column;
+                    width: 67%;
+                    padding: 10px;
+                }
+
+                .contenedor2 {
+                    display: flex;
+                    flex-direction: row;
+                    width:auto;
+                }
+
+                .dni {
+                    display: flex;
+                    flex-direction: column;
+                    width: 40%;
+                    padding: 10px;
+                }
+
+                .ncontacto {
+                    display: flex;
+                    flex-direction: column;
+                    width: 20%;
+                    padding: 10px;
+                }
+
+                .correo {
+                    display: flex;
+                    flex-direction: column;
+                    width: 60%;
+                    padding: 10px;
+                }
+
+                .contenedor3 {
+                    display: flex;
+                    flex-direction: row;
+                }
+
+                .domicilio {
+                    display: flex;
+                    flex-direction: column;
+                    width: 70%;
+                    padding: 10px;
+                }
+
+                .ntarjeta {
+                    display: flex;
+                    flex-direction: column;
+                    width: 70%;
+                    padding: 10px;
+                }
+
+                .contenedor-botones {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                }
+
+                .boton {
+                    background-color: #ACE8E6;
+                }
             }
+            @media (min-width: 0em ) and (max-width: 40em) {
+                body {
+                    font-family: Arial, Helvetica, sans-serif;
+                    background-image: url('imagenes/ticket2.jpg');
+                    background-size: cover;
+                    color: white;
+                }
 
-            h1 {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
+                h1 {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                }
+
+                form {
+                    padding: 10px;
+                }
+
+                .contenedor {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                }
+
+                .tamaño-contenedor {
+                    width: 75%;
+                    
+                }
+
+                .contenedor1 {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .nombre {
+                    display: flex;
+                    flex-direction: column;
+                    width: 33%;
+                    padding: 10px;
+                }
+
+                .apellidos {
+                    display: flex;
+                    flex-direction: column;
+                    width: 67%;
+                    padding: 10px;
+                }
+                
+                .contenedor2 {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+
+                .dni {
+                    display: flex;
+                    flex-direction: column;
+                    width: 33%;
+                    padding: 10px;
+                }
+
+                .ncontacto {
+                    display: flex;
+                    flex-direction: column;
+                    width: 20%;
+                    padding: 10px;
+                }
+                
+                .contenedor3 {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .correo {
+                    display: flex;
+                    flex-direction: column;
+                    width: 65%;
+                    padding: 10px;
+                }
+
+ 
+                .domicilio {
+                    display: flex;
+                    flex-direction: column;
+                    width: 85%;
+                    padding: 10px;
+                }
+
+                .ntarjeta {
+                    display: flex;
+                    flex-direction: column;
+                    width: 85%;
+                    padding: 10px;
+                }
+
+                .contenedor-botones {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                }
+
+                .boton {
+                    background-color: #ACE8E6;
+                }
+
             }
+            @media (min-width: 40em) and (max-width:75em)  {
+                body {
+                    font-family: Arial, Helvetica, sans-serif;
+                    background-image: url('imagenes/ticket2.jpg');
+                    background-size: cover;
+                    color: white;
+                }
 
-            form {
-                padding: 10px;
+                h1 {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                }
+
+                form {
+                    padding: 10px;
+                }
+
+                .contenedor {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .tamaño-contenedor {
+                    width: 75%;
+                }
+
+                .contenedor1 {
+                    display: flex;
+                    flex-direction: row;
+                    width: auto;
+                }
+
+                .nombre {
+                    display: flex;
+                    flex-direction: column;
+                    width: 33%;
+                    padding: 10px;
+                }
+
+                .apellidos {
+                    display: flex;
+                    flex-direction: column;
+                    width: 67%;
+                    padding: 10px;
+                }
+
+                .contenedor2 {
+                    display: flex;
+                    flex-direction: row;
+                    width:auto;
+                }
+
+                .dni {
+                    display: flex;
+                    flex-direction: column;
+                    width: 40%;
+                    padding: 10px;
+                }
+
+                .ncontacto {
+                    display: flex;
+                    flex-direction: column;
+                    width: 20%;
+                    padding: 10px;
+                }
+
+                .correo {
+                    display: flex;
+                    flex-direction: column;
+                    width: 60%;
+                    padding: 10px;
+                }
+
+                .contenedor3 {
+                    display: flex;
+                    flex-direction: row;
+                }
+
+                .domicilio {
+                    display: flex;
+                    flex-direction: column;
+                    width: 70%;
+                    padding: 10px;
+                }
+
+                .ntarjeta {
+                    display: flex;
+                    flex-direction: column;
+                    width: 70%;
+                    padding: 10px;
+                }
+
+                .contenedor-botones {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                }
+
+                .boton {
+                    background-color: #ACE8E6;
+                }
             }
-
-            .contenedor {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .tamaño-contenedor {
-                width: 75%;
-            }
-
-            .contenedor1 {
-                display: flex;
-                flex-direction: row;
-                width: auto;
-            }
-
-            .nombre {
-                display: flex;
-                flex-direction: column;
-                width: 33%;
-                padding: 10px;
-            }
-
-            .apellidos {
-                display: flex;
-                flex-direction: column;
-                width: 67%;
-                padding: 10px;
-            }
-
-            .contenedor2 {
-                display: flex;
-                flex-direction: row;
-                width: auto;
-            }
-
-            .dni {
-                display: flex;
-                flex-direction: column;
-                width: 40%;
-                padding: 10px;
-            }
-
-            .ncontacto {
-                display: flex;
-                flex-direction: column;
-                width: 20%;
-                padding: 10px;
-            }
-
-            .correo {
-                display: flex;
-                flex-direction: column;
-                width: 60%;
-                padding: 10px;
-            }
-
-            .contenedor3 {
-                display: flex;
-                flex-direction: row;
-            }
-
-            .domicilio {
-                display: flex;
-                flex-direction: column;
-                width: 70%;
-                padding: 10px;
-            }
-
-            .ntarjeta {
-                display: flex;
-                flex-direction: column;
-                width: 70%;
-                padding: 10px;
-            }
-
-            .contenedor-botones {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-            }
-
-            .boton {
-                background-color: #ACE8E6;
-            }
-        }
-
-        @media screen and (max-width: 450px) {
-            body {
-                font-family: Arial, Helvetica, sans-serif;
-                background-image: url('imagenes/ticket2.jpg');
-                background-size: cover;
-                -webkit-text-stroke: 0.15px white;
-                color: black;
-            }
-
-            h1 {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-            }
-
-            form {
-                padding: 10px;
-            }
-
-            .contenedor {
-                display: flex;
-                flex-direction: row;
-                overflow: auto;
-                justify-content: center;
-            }
-
-            .tamaño-contenedor {
-                width: 75%;
-            }
-
-            .contenedor1 {
-                display: flex;
-                flex-direction: column;
-                overflow: auto;
-            }
-
-            .nombre {
-                display: flex;
-                flex-direction: column;
-                width: 33%;
-                padding: 10px;
-            }
-
-            .apellidos {
-                display: flex;
-                flex-direction: column;
-                width: 67%;
-                padding: 10px;
-            }
-
-
-            .dni {
-                display: flex;
-                flex-direction: column;
-                width: 33%;
-                padding: 10px;
-            }
-
-            .ncontacto {
-                display: flex;
-                flex-direction: column;
-                width: 20%;
-                padding: 10px;
-            }
-
-            .correo {
-                display: flex;
-                flex-direction: column;
-                width: 65%;
-                padding: 10px;
-            }
-
-
-            .domicilio {
-                display: flex;
-                flex-direction: column;
-                width: 85%;
-                padding: 10px;
-            }
-
-            .ntarjeta {
-                display: flex;
-                flex-direction: column;
-                width: 85%;
-                padding: 10px;
-            }
-
-            .contenedor-botones {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-            }
-
-            .boton {
-                background-color: #ACE8E6;
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <div class="contenedor">
-        <div class="tamaño-contenedor">
-            <h1 style="text-align:center">Compra de entradas</h1>
-            <div class="contenedor1">
-                <div class="nombre">
-                    <p>Nombre: </p>
-                    <input type="text" name="nombre">
+        </style>
+    </head>
+  
+    <body>
+        <div class="contenedor">
+            <div class="tamaño-contenedor">
+                <h1 style="text-align:center">Compra de entradas</h1>
+                <div class="contenedor1">
+                    <div class="nombre">
+                        <p>Nombre: </p>
+                        <input type="text" name="nombre">
+                    </div>
+                    <div class="apellidos">
+                        <p>Apellidos: </p>
+                        <input type="text" name="apellidos">
+                    </div>
                 </div>
-                <div class="apellidos">
-                    <p>Apellidos: </p>
-                    <input type="text" name="apellidos">
+                <div class="contenedor2">
+                    <div class="dni">
+                        <p>DNI: </p>
+                        <input type="text" name="dni">
+                    </div>
+                    <div class="ncontacto">
+                        <p>Nº contacto: </p>
+                        <input type="text" name="contacto">
+                    </div>
+                    <div class="correo">
+                        <p>Correo: </p>
+                        <input type="text" name="correo">
+                    </div>
                 </div>
-            </div>
-            <div class="contenedor1">
-                <div class="dni">
-                    <p>DNI: </p>
-                    <input type="text" name="dni">
+                 <div class="contenedor3">
+                    <div class="domicilio">
+                        <p>Domicilio: </p>
+                        <input type="text" name="domicilio">
+                    </div>
+                    <div class="ntarjeta">
+                        <p>Nº de tarjeta: </p>
+                        <input type="text" name="tarjeta">
+                    </div>
                 </div>
-                <div class="ncontacto">
-                    <p>Nº contacto: </p>
-                    <input type="text" name="contacto">
+                <div class="contenedor-botones">
+                    <form action = "Pago realizado.html" method = "GET"> 
+                        <input class="boton" type="submit" value="Pagar" />
+                    </form> 
+                    <form action = "Festival.html" method = "GET"> 
+                        <input class="boton" type="submit" value="Cancelar" />
+                    </form>
                 </div>
-                <div class="correo">
-                    <p>Correo: </p>
-                    <input type="text" name="correo">
-                </div>
-            </div>
-            <div class="contenedor1">
-                <div class="domicilio">
-                    <p>Domicilio: </p>
-                    <input type="text" name="domicilio">
-                </div>
-                <div class="ntarjeta">
-                    <p>Nº de tarjeta: </p>
-                    <input type="text" name="tarjeta">
-                </div>
-            </div>
-            <div class="contenedor-botones">
-                <form action="Pago realizado.html" method="GET">
-                    <input class="boton" type="submit" value="Pagar" />
-                </form>
-                <form action="Festival.html" method="GET">
-                    <input class="boton" type="submit" value="Cancelar" />
-                </form>
             </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>

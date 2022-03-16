@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Iniciar sesión</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                font-family:  Arial, Helvetica, sans-serif;
+            }
+            
+            .contenedor {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .contenedor-derecho {
+                background-image: url("imagenes/iniciar-sesion-fondo.jpg");
+                background-size: cover;
+            }
+            
+            .datos{
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+            }
+            
+            .boton-iniciar-sesion{
+                background-color: #7CFFC5;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="contenedor">
+            <div class="contenedor-izquierdo">
+                <p>Bienvenido a Festivals</p>
+                <h1>Iniciar sesión</h1>
+                
+                <div class="datos">
+                    <input type="text" placeholder="correo" name="correo">
+                    <br>
+                    <input type="text" placeholder="contraseña" name="contraseña">
+                </div>
+                
+                
+                <div>
+                    <button class="boton-iniciar-sesion">Inciar sesión</button>
+                </div>
+
+                <a href="">¿Has olvidado tu contraseña?</a>
+                
+                <p>¿No tienes cuenta? <a href="Registrate"></a></p>
+            </div>
+            <div class="contenedor-derecho">
+                
+            </div>
+            
+        
+        </div>
+        
+    </body>
+</html>
