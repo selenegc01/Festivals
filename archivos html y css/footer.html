@@ -1,143 +1,220 @@
 <!DOCTYPE html>
-    <html>
-        <head>
+<html>
+    <head>
         <title> Footer </title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-            <style>     
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>     
+            @media (min-width: 75em)  {
                 body {
                     font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+                    background-color: #ACE8E6;
                 }
                 
-                .container-row {
+                .contenedor {
                     display: flex;
                     flex-direction: row;
-                }
-
-                .container-col {
-                    display: flex;
-                    flex-direction: column;
-                }        
-
-                .box-row {
-                    flex-direction: row;
-                }
-                
-                .flex-column{
-                    flex-direction: column;
-                }
-
-                .justify-center {
                     justify-content: center;
                 }
-
-                .justify-left {
-                    justify-content: flex-start;
-                }
-
-                .justify-right {
-                    justify-content: flex-end;
-                }
-
-                .align-center {
-                    align-items: center;
-                }
-
-                .align-left {
-                    align-items: flex-start;
-                }
-
-                .align-right {
-                    align-items: flex-end;
-                }
-
-                .width-100 {
-                    width: 100%;
-                }
-
-                .width-75 {
-                    width: 75%;
-                }
-
-                .width-50 {
-                    width: 50%;
-                }
-
-                .width-25 {
-                    width: 25%;
-                }
-
-                .padding-10 {
-                    padding: 0px 10px 0px 10px;
-                }
-
-                .padding-5 {
-                    padding: 5px;
-                }
-       
-                .text-center {
-                    text-align: center;
-                }
-
-                .font-bold {
-                    font-weight: bold;
+                
+                .conocenos {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px;
                 }
                 
-                .image {
+                .contacto {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px;
+                }
+                
+                li {
+                    position:relative;
+                    right:50%;
+                }
+                
+                .redes-sociales {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px;
+                }
+                
+                img {
                     width: 10px;
                     height: 10px;
                 }
                 
-                li{
+                img:hover {
+                    transform: scale(1.2);
+                }
+                
+                .aviso-legal {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px;
+                }
+                
+                .titulos {
+                    font-weight: bold;
+                }
+            }
+            @media (min-width: 0em ) and (max-width: 40em)   {
+                body {
+                    font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+                    background-color: #ACE8E6;
+                    font-size: 1% 
+                }
+                
+                .contenedor {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                }
+                
+                .conocenos {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px;
+                }
+                
+                .contacto {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px;
+                }
+                
+                li {
                     position:relative;
                     right:50%;
                 }
-            </style>
-        </head>
-        
-        <body>
-            <div class="container-row justify-center">
-                <div class="container-col padding-10">
-                    <div class="font-bold">
-                        <p>Conócenos</p>
-                    </div>
-                    <div>
-                        <p>Somos una empresa destinada a <br> buscar el festival que mejor se adapte a ti. <br> Te mereces un festivals.</p>
-                    </div>
+                
+                .redes-sociales {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px;
+                }
+                
+                img {
+                    width: 5px;
+                    height: 5px;
+                }
+                
+                img:hover {
+                    transform: scale(1.2);
+                }
+                
+                .aviso-legal {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px;
+                }
+                
+                .titulos {
+                    font-weight: bold;
+                }
+            }
+            @media (min-width: 40em) and (max-width:75em)   {
+                body {
+                    font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+                    background-color: #ACE8E6;
+                }
+                
+                .contenedor {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                }
+                
+                .conocenos {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px;
+                }
+                
+                .contacto {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px;
+                }
+                
+                li {
+                    position:relative;
+                    right:50%;
+                }
+                
+                .redes-sociales {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px;
+                }
+                
+                img {
+                    width: 10px;
+                    height: 10px;
+                }
+                
+                img:hover {
+                    transform: scale(1.2);
+                }
+                
+                .aviso-legal {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px;
+                }
+                
+                .titulos {
+                    font-weight: bold;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="contenedor">
+            <div class="conocenos">
+                <div class="titulos">
+                    <p>Conócenos</p>
                 </div>
-                <div class="container-col padding-10">
-                    <div class="font-bold">
-                        <p>Contacto</p>
-                    </div>
-                    <div>
-                        <ul>
-                            <li>695284756</li>
-                            <li>698521474</li>
-                        </ul>
-                    </div>
+                <div>
+                    <p>Somos una empresa destinada a <br> buscar el festival que mejor se adapte a ti. <br> Te mereces un festivals.</p>
                 </div>
-                <div class="container-col padding-10">
-                    <div class="font-bold">
-                        <p>Síguenos</p>
-                    </div>
-                    <div>
-                        <p>
-                            <img class="image" src= "https://cdn-icons-png.flaticon.com/512/44/44646.png">
-                            Facebook <br>
-                            <img class="image" src="https://cdn-icons-png.flaticon.com/512/87/87390.png">
-                            Instagram <br>
-                            <img class="image" src = "https://cdn-icons-png.flaticon.com/512/60/60580.png">
-                            Twitter 
-                        </p>
-                    </div>
+            </div>
+            <div class="contacto">
+                <div class="titulos">
+                    <p>Contacto</p>
                 </div>
-                <div class="container-col padding-10">
-                    <div class="font-bold">
-                        <p>Aviso legal</p>
-                    </div>
-                    <div>
-                        <p>xxxxxxxxxxxx <br> xxxxxxxxxxxx</p>
-                    </div>
+                <div>
+                    <ul>
+                        <li>695284756</li>
+                        <li>698521474</li>
+                    </ul>
                 </div>
-            </div>   
-        </body>
-  </html>
+            </div>
+            <div class="redes-sociales">
+                <div class="titulos">
+                    <p>Síguenos</p>
+                </div>
+                <div>
+                    <p>
+                        <img src= "https://cdn-icons-png.flaticon.com/512/44/44646.png">
+                        Facebook <br>
+                        <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png">
+                        Instagram <br>
+                        <img src = "https://cdn-icons-png.flaticon.com/512/60/60580.png">
+                        Twitter 
+                    </p>
+                </div>
+            </div>
+            <div class="aviso-legal">
+                <div class="titulos">
+                    <p>Aviso legal</p>
+                </div>
+                <div>
+                    <p>xxxxxxxxxxxx <br> xxxxxxxxxxxx</p>
+                </div>
+            </div>
+        </div>   
+    </body>
+</html>
