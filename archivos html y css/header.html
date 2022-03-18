@@ -5,34 +5,19 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Header</title>
         <style>
-            @media (min-width: 75em)  {
-                .centrar{
-                    display:flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-
-                .izqda{
-                    display:flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-
+            @media (min-width: 0em ) and (max-width: 40em)  {
                 .header {
                     display: grid;
-                    grid-template-rows: 50px 50px 50px 20px;
-                    grid-template-columns: 100px 100px 200px 100px 35px 100px;
+                    grid-template-rows: 1fr;
+                    grid-template-columns: 0.1fr 0.1fr 0.5fr;
                     grid-template-areas:
-                    ". . . . . ."
-                    ". area2 area2 area2 . ."
-                    ". . . . . ."
-                    "area7 area3 area4 area5 . area6";
+                    "area1 . area2";
                 }
 
-                .icono{
+                .logo{
                     text-align: center;
-                    float: center;
-                    width: 10%;
+                        grid-area: area1;
+                        width: 150%;
                 }
 
                 .titulo{
@@ -42,154 +27,25 @@
                     grid-area: area2;
                 }
 
-                .barra1{
-                    text-align: center;
-                    grid-area: area3;
-                }
-                
-                .barra2{
-                    text-align: center;
-                    grid-area: area4;
-                }
-                
-                .barra3{
-                    text-align: center;
-                    grid-area: area5;
-                    width: 130.21px;
-                }
-
-                .barra4{
-                    text-align: center;
-                    grid-area: area6;
-                    width: 20.21px;
-                    height: 20px;
-                    border: 1px solid #4b4a4aa8;
-                    border-radius: 2px; 
-                    box-sizing: border-box;
+                .center{
                     display:flex;
                     justify-content: center;
                     align-items: center;
-                }
-                .image{
-                    text-align: center;
-                    grid-area: area6;
-                    
-                    width: 15.21px;
-                    height: 15px;
-                    display:flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-            }
-
-            @media (min-width: 0em ) and (max-width: 40em)   {
-                .centrar{
-                    display:flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-
-                .izqda{
-                    display:flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-
-                .header {
-                    display: grid;
-                    grid-template-rows: 50px 50px 50px 20px;
-                    grid-template-columns: 100px 100px 200px 100px 35px 100px;
-                    grid-template-areas:
-                    ". . . . . ."
-                    ". area2 area2 area2 . ."
-                    ". . . . . ."
-                    "area7 area3 area4 area5 . area6";
-                }
-
-                .icono{
-                    text-align: center;
-                    float: center;
-                    width: 10%;
-                    
-                }
-
-                .titulo{
-                    font-family: Sriracha;
-                    text-align: center;
-                    font-size: 250%;
-                    grid-area: area2;
-                }
-
-                .barra1{
-                    text-align: center;
-                    grid-area: area3;
-                }
-                
-                .barra2{
-                    text-align: center;
-                    grid-area: area4;
-                }
-                
-                .barra3{
-                    text-align: center;
-                    grid-area: area5;
-                    width: 130.21px;
-                }
-
-                .barra4{
-                    text-align: center;
-                    grid-area: area6;
-                    
-                    width: 20.21px;
-                    height: 20px;
-
-                    border: 1px solid #4b4a4aa8;
-                    border-radius: 2px; 
-                    box-sizing: border-box;
-                    display:flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-                
-                .image{
-                    text-align: center;
-                    grid-area: area6;
-                    
-                    width: 15.21px;
-                    height: 15px;
-                    display:flex;
-                    justify-content: center;
-                    align-items: center;      
                 }
             }
             @media (min-width: 40em) and (max-width:75em)  {
-                .centrar{
-                    display:flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-
-                .izqda{
-                    display:flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-
                 .header {
                     display: grid;
-                    grid-template-rows: 50px 50px 50px 20px;
-                    grid-template-columns: 100px 100px 200px 100px 35px 100px;
+                    grid-template-rows: 1fr;
+                    grid-template-columns: 0.1fr 0.1fr 0.5fr;
                     grid-template-areas:
-                    ". . . . . ."
-                    ". area2 area2 area2 . ."
-                    ". . . . . ."
-                    "area7 area3 area4 area5 . area6";
+                    "area1 . area2";
                 }
 
-                .icono{
+                .logo{
                     text-align: center;
-                    float: center;
-                    width: 10%;   
+                        grid-area: area1;
+                        width: 150%;
                 }
 
                 .titulo{
@@ -199,90 +55,55 @@
                     grid-area: area2;
                 }
 
-                .barra1{
-                    text-align: center;
-                    grid-area: area3;
-                }
-                
-                .barra2{
-                    text-align: center;
-                    grid-area: area4;
-                }
-                
-                .barra3{
-                    text-align: center;
-                    grid-area: area5;
-                    width: 130.21px;
-                }
-
-                .barra4{
-                    text-align: center;
-                    grid-area: area6;
-                    
-                    width: 20.21px;
-                    height: 20px;
-
-                    border: 1px solid #4b4a4aa8;
-                    border-radius: 2px; 
-                    box-sizing: border-box;
+                .center{
                     display:flex;
                     justify-content: center;
                     align-items: center;
-                    
-                }
-                
-                .image{
-                    text-align: center;
-                    grid-area: area6;
-                    
-                    width: 15.21px;
-                    height: 15px;
-                    display:flex;
-                    justify-content: center;
-                    align-items: center;      
                 }
             }
+            @media (min-width: 75em)  {
+                .header {
+                    display: grid;
+                    grid-template-rows: 1fr;
+                    grid-template-columns: 0.1fr 0.1fr 0.5fr;
+                    grid-template-areas:
+                    "area1 . area2";
+                }
+
+                .logo{
+                    text-align: center;
+                        grid-area: area1;
+                        width: 150%;
+                }
+
+                .titulo{
+                    font-family: Sriracha;
+                    text-align: center;
+                    font-size: 250%;
+                    grid-area: area2;
+                }
+
+                .center{
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
         </style>
     </head>
-    
-    <div class="centrar">
-        <nav>
-            <a class="icono" href="MainPage.html"><img class="icono" src="imagenes/logo.png"/> </a>
-        </nav>
-        
-        <div class="header">
-            
-               
-            <div class="titulo">FESTIVALS</div>
-    
-                <select class="barra1" required>
-                    <option value="1" selected disabled>Tipo</option>
-                    <optgroup>
-                        <option value="Música">Música</option>
-                        <option value="Manga">Manga</option>
-                        <option value="Timple">Timple</option>
-                        <option value="Gastronomia">Gastronomia</option>
-                    </optgroup>
-                </select>
-        
-                <select class="barra2" required>
-                    <option value="1" selected disabled>Ubicación</option>
-                    <optgroup label="Pais" placeholder="Ubicación">
-                        <option value="Francia">Francia</option>
-                        <option value="España">España</option>
-                        <option value="ReinoUnido">Reino Unido</option>
-                    </optgroup>
 
-                    <optgroup label="Ciudad">
-                        <option value="LyonFrancia">Lyon, Francia</option>
-                        <option value="MadridEspaña">Madrid, España</option>
-                        <option value="YorkReinoUnido">York, Reino Unido</option>
-                    </optgroup>
-                </select>
-                <input class="barra3" type="date" name="Fecha">
-                <nav class="barra4">
-                    <a href="MainPage.html"><img class="image" src="imagenes/buscador.png" /></a>
+
+    <body>
+        <div class="center">
+            <div class="header">
+                <nav>
+                    <a class="logo" href="MainPage.html"><img class="logo" src="imagenes/logo.png"/> </a>
                 </nav>
+                <div class="titulo">FESTIVALS</div>
+            </div>
         </div>
-    </div>
+        
+
+    </body>
 </html>

@@ -292,10 +292,95 @@
                 padding: 90px 10px 0px 518px;
 
             }
+            .header {
+                    display: grid;
+                    grid-template-rows: 20px;
+                    grid-template-columns: 100px;
+                    grid-template-areas:
+                    "area8 area9 area10 . area11";
+                }
+
+                .barra1{
+                    text-align: center;
+                    grid-area: area8;
+                }
+                
+                .barra2{
+                    text-align: center;
+                    grid-area: area9;
+                }
+                
+                .barra3{
+                    text-align: center;
+                    grid-area: area10;
+                    width: 130.21px;
+                }
+
+                .barra4{
+                    text-align: center;
+                    grid-area: area11;
+                    
+                    width: 20.21px;
+                    height: 20px;
+
+                    border: 1px solid #4b4a4aa8;
+                    border-radius: 2px; 
+                    box-sizing: border-box;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                }
+                .imageLupa{
+                    text-align: center;
+                    grid-area: area11;
+                    
+                    width: 15.21px;
+                    height: 15px;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;      
+                }
+            
         </style>
     </head>
 
     <body>
+
+        <div class="centrar">
+            <div class="header">
+                       
+                <select class="barra1" required>
+                    <option value="1" selected disabled>Tipo</option>
+                    <optgroup>
+                        <option value="Música">Música</option>
+                        <option value="Manga">Manga</option>
+                        <option value="Timple">Timple</option>
+                        <option value="Gastronomia">Gastronomia</option>
+                    </optgroup>
+                </select>
+        
+                <select class="barra2" required>
+                    <option value="1" selected disabled>Ubicación</option>
+                    <optgroup label="Pais" placeholder="Ubicación">
+                        <option value="Francia">Francia</option>
+                        <option value="España">España</option>
+                        <option value="ReinoUnido">Reino Unido</option>
+                    </optgroup>
+    
+                    <optgroup label="Ciudad">
+                        <option value="LyonFrancia">Lyon, Francia</option>
+                        <option value="MadridEspaña">Madrid, España</option>
+                        <option value="YorkReinoUnido">York, Reino Unido</option>
+                    </optgroup>
+                </select>
+                <input class="barra3" type="date" name="Fecha">
+                <nav class="barra4">
+                    <a href="MainPage.html"><img class="image" src="imagenes/buscador.png" /></a>
+                </nav>
+            </div>
+        </div>
+
         <div class="centrar">
             <div class="estructura">
                 <div class="titulo"> Nombre del festival </div>
