@@ -9,7 +9,47 @@ and open the template in the editor.
         <title>Iniciar sesión</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script scr="validar.js"></script>
+        <script>   
+            var correo, contraseña;
+            function initiate(){
+                correo = document.getElementById("firstname");
+                contraseña = document.getElementById("lastname");
+                correo.addEventListener("input", validation_correo);
+                contraseña.addEventListener("input", validation_contraseña);
+                validation();
+            }
+            function validation_correo(e){
+                if (correo.validity.valueMissing) {
+                    correo.style.background = '#FF0000';
+                    correo.setCustomValidity("El correo es obligatorio"); 
+                }else if(correo.validity.patternMismatch) {
+                    correo.style.background = '#FF0000';
+                    correo.setCustomValidity("Se esperaba una dirección de correo electrónico");
+                }else {
+                    correo.setCustomValidity('');
+                    correo.style.background = '#FFFFFF';
+                }
+            }
+            function validation_contraseña(e){
+                if (contraseña.validity.valueMissing) {
+                    contraseña.style.background = '#FF0000';
+                    contraseña.setCustomValidity("La contraseña es obligatorio"); 
+                }else if(contraseña.validity.tooShort){
+                    contraseña.style.background = '#FF0000';
+                    contraseña.setCustomValidity("La contraseña debe tener más de 8 dígitos"); 
+                }else if(contraseña.validity.tooLong){
+                    contraseña.style.background = '#FF0000';
+                    contraseña.setCustomValidity("La contraseña debe tener menos de 15 dígitos"); 
+                }else if(contraseña.validity.patternMismatch) {
+                    contraseña.style.background = '#FF0000';
+                    contraseña.setCustomValidity("Se esperaba una contraseña con mínimo una minúscula, una masyúscula, un dígito numérico y sin espacios");
+                }else {
+                    contraseña.setCustomValidity('');
+                    contraseña.style.background = '#FFFFFF';
+                }
+            }
+            addEventListener("load", initiate);
+        </script>
         <style>
             a{
                 color: black;
@@ -18,6 +58,7 @@ and open the template in the editor.
             a:link, a:visited, a:active {
                 text-decoration:none;
             }
+            
             .center{
                 display: flex;
                 justify-content:center;
@@ -150,14 +191,15 @@ and open the template in the editor.
     <body>
         <div class="center">
             <div class="login-container">
+                
                 <img class="image-container" src="imagenes/festival4.jpg" alt="login">
                 <div class="login-info-container">
                     <h1 class="title">¡Ingrese a su cuenta!</h1>
-                    <form action="MainPage.html" method="post" class="inputs-container" onsubmit="return validar();">
-                        <input id="nombre_usuario" type="text" placeholder="Usuario" required>
-                        <input id="contraseña" type="password" placeholder="Contraseña" required>
-                            <button class="btn">Iniciar sesión</button>
-                            <p>¿No tienes una cuenta?<a href="Registrarse.html" class="span">Registrarse</a></p>
+                    <form name="information" action="MainPage.html" method="post" class="inputs-container">
+                        <input id="correo" type="email" placeholder="Correo" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" required>
+                        <input id="contraseña" type="password" placeholder="Contraseña" pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,15}$" minlength="8" maxlength="15" required>
+                        <button id="InciarSesion" class="btn">Iniciar sesión</button>
+                        <p>¿No tienes una cuenta?<a href="Registrarse.html" class="span">Registrarse</a></p>
                     </form>
                 </div>
             </div>
