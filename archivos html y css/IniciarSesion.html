@@ -9,14 +9,17 @@ and open the template in the editor.
         <title>Iniciar sesión</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        <link rel="stylesheet" href="estilos.css">
         <script>   
             var correo, contraseña;
             function initiate(){
-                correo = document.getElementById("firstname");
-                contraseña = document.getElementById("lastname");
+                correo = document.getElementById("correo");
+                contraseña = document.getElementById("contraseña");
                 correo.addEventListener("input", validation_correo);
                 contraseña.addEventListener("input", validation_contraseña);
                 validation();
+                return false;
             }
             function validation_correo(e){
                 if (correo.validity.valueMissing) {
@@ -57,6 +60,10 @@ and open the template in the editor.
             
             a:link, a:visited, a:active {
                 text-decoration:none;
+            }
+            
+            i{
+                padding: 5px;
             }
             
             .center{
@@ -148,6 +155,11 @@ and open the template in the editor.
                 font-weight: 600;
             }
 
+            .input_contenedor{
+                display: flex;
+                flex-direction: row;
+                align-items: baseline;
+            }
             @media screen and (min-width: 0em) and (max-width:40em) {
                 .login-container {
                     width: 70%;
@@ -191,14 +203,19 @@ and open the template in the editor.
     <body>
         <div class="center">
             <div class="login-container">
-                
                 <img class="image-container" src="imagenes/festival4.jpg" alt="login">
                 <div class="login-info-container">
                     <h1 class="title">¡Ingrese a su cuenta!</h1>
-                    <form name="information" action="MainPage.html" method="post" class="inputs-container">
-                        <input id="correo" type="email" placeholder="Correo" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" required>
-                        <input id="contraseña" type="password" placeholder="Contraseña" pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,15}$" minlength="8" maxlength="15" required>
-                        <button id="InciarSesion" class="btn">Iniciar sesión</button>
+                    <form id="information" name="information" action="MainPage.html" method="get" class="inputs-container">
+                        <div class="input_contenedor">
+                            <i class="fas fa-envelope icon"></i>
+                            <input id="correo" type="email" placeholder="Correo*" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" required>
+                        </div>
+                        <div class="input_contenedor">
+                            <i class="fas fa-key icon"></i>
+                            <input id="contraseña" type="password" placeholder="Contraseña*" pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,15}$" minlength="8" maxlength="15" required>
+                        </div>
+                        <button id="InciarSesion" class="btn" onclick='return initiate();'>Iniciar sesión</button>
                         <p>¿No tienes una cuenta?<a href="Registrarse.html" class="span">Registrarse</a></p>
                     </form>
                 </div>
